@@ -21,11 +21,17 @@
     <properties>
         <project.source.version>1.8</project.source.version>
         <project.target.version>1.8</project.target.version>
+        <jetty.plugin.version>9.4.14.v20181114</jetty.plugin.version>
+        <jetty.version>${jetty.plugin.version}</jetty.version>
         <project.encoding>UTF-8</project.encoding>
+        <docker.maven.plugin.version>0.4.1</docker.maven.plugin.version>
+        <docker.image.prefix>ciminc</docker.image.prefix>
+        <docker.entrypoint>["java","-Djava.security.egd=file:/dev/./urandom","-jar", "/app.war"]</docker.entrypoint>
     </properties>
 
     <modules>
         <module>reactx</module>
+        <!--        <module>rdx-docker</module>-->
         <!--        <module>djangox</module>-->
     </modules>
 </project>
