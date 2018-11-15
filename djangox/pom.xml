@@ -1,0 +1,45 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+    <artifactId>djangox</artifactId>
+    <packaging>war</packaging>
+    <version>1.0-SNAPSHOT</version>
+    <name>React Django Backend</name>
+    <url>http://maven.apache.org</url>
+
+    <parent>
+        <groupId>com.espan360.rdx</groupId>
+        <artifactId>react-django-x</artifactId>
+        <version>1.0-SNAPSHOT</version>
+    </parent>
+
+    <properties>
+        <maven-jetty-plugin.version>6.1.26</maven-jetty-plugin.version>
+        <frontend-plugins.version>1.6</frontend-plugins.version>
+        <gmaven-plugin.version>1.0</gmaven-plugin.version>
+        <maven-war-plugin.version>3.2.2</maven-war-plugin.version>
+        <smiley-http-proxy-servlet.version>1.10</smiley-http-proxy-servlet.version>
+        <nodeVersion>v9.9.0</nodeVersion>
+        <npmVersion>6.4.1</npmVersion>
+    </properties>
+
+    <dependencies>
+        <dependency>
+            <groupId>org.mitre.dsmiley.httpproxy</groupId>
+            <artifactId>smiley-http-proxy-servlet</artifactId>
+            <version>${smiley-http-proxy-servlet.version}</version>
+            <scope>compile</scope>
+        </dependency>
+        <dependency>
+            <groupId>org.apache.maven.plugins</groupId>
+            <artifactId>maven-war-plugin</artifactId>
+            <version>${maven-war-plugin.version}</version>
+            <type>maven-plugin</type>
+        </dependency>
+        <dependency>
+            <groupId>org.mortbay.jetty</groupId>
+            <artifactId>jsp-2.1</artifactId>
+            <version>6.1.14</version>
+        </dependency>
+    </dependencies>
+</project>
